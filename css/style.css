@@ -1,3 +1,14 @@
+/* ============================================================
+   JACKIE MAI C. CAMPANO - PERSONAL PORTFOLIO
+   style.css - All styles go here
+   ============================================================ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap');
+
+/* ============================================================
+   CSS VARIABLES
+   ============================================================ */
 :root {
   --pink: #a78bca;
   --dark-pink: #7c52a5;
@@ -11,6 +22,9 @@
   --shadow-big: 0 8px 40px rgba(124, 82, 165, 0.3);
 }
 
+/* ============================================================
+   GLOBAL RESET & BASE
+   ============================================================ */
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +56,9 @@ ul {
   list-style: none;
 }
 
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
 nav {
   background-color: var(--white);
   box-shadow: var(--shadow);
@@ -96,6 +113,9 @@ nav {
   color: var(--white);
 }
 
+/* ============================================================
+   PAGE HEADER BANNER
+   ============================================================ */
 .page-header {
   background: linear-gradient(135deg, var(--soft-pink) 0%, var(--light-pink) 100%);
   padding: 60px 20px;
@@ -115,12 +135,18 @@ nav {
   font-style: italic;
 }
 
+/* ============================================================
+   MAIN CONTENT WRAPPER
+   ============================================================ */
 .main-content {
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 20px;
 }
 
+/* ============================================================
+   SECTION TITLE
+   ============================================================ */
 .section {
   margin-bottom: 60px;
 }
@@ -133,6 +159,9 @@ nav {
   border-bottom: 2px solid var(--light-pink);
 }
 
+/* ============================================================
+   CARD
+   ============================================================ */
 .card {
   background-color: var(--white);
   border-radius: 16px;
@@ -141,6 +170,9 @@ nav {
   margin-bottom: 20px;
 }
 
+/* ============================================================
+   BUTTONS
+   ============================================================ */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -171,6 +203,9 @@ nav {
   color: var(--white);
 }
 
+/* ============================================================
+   FOOTER
+   ============================================================ */
 footer {
   background-color: var(--dark);
   color: var(--light-pink);
@@ -197,6 +232,9 @@ footer .footer-links a:hover {
   color: var(--white);
 }
 
+/* ============================================================
+   PHOTO PLACEHOLDER BOX
+   ============================================================ */
 .photo-placeholder {
   background: linear-gradient(135deg, var(--soft-pink), var(--light-pink));
   border: 2px dashed var(--pink);
@@ -217,6 +255,11 @@ footer .footer-links a:hover {
   margin-bottom: 10px;
 }
 
+/* ============================================================
+   ====== HOME PAGE (index.html) ======
+   ============================================================ */
+
+/* Hero Section */
 .hero {
   background: linear-gradient(135deg, #ede7f6 0%, #e0d4f5 50%, #ede7f6 100%);
   padding: 80px 20px;
@@ -300,6 +343,7 @@ footer .footer-links a:hover {
   flex-wrap: wrap;
 }
 
+/* Home Info Cards */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -337,6 +381,7 @@ footer .footer-links a:hover {
   color: var(--medium);
 }
 
+/* Home Quick Links */
 .quick-links-box {
   background-color: var(--white);
   border-radius: 16px;
@@ -389,6 +434,10 @@ footer .footer-links a:hover {
   font-weight: 700;
   color: var(--medium);
 }
+
+/* ============================================================
+   ====== ABOUT PAGE (about.html) ======
+   ============================================================ */
 
 .about-grid {
   display: grid;
@@ -487,6 +536,10 @@ footer .footer-links a:hover {
   font-weight: 700;
 }
 
+/* ============================================================
+   ====== EDUCATION PAGE (education.html) ======
+   ============================================================ */
+
 .edu-timeline {
   position: relative;
   padding-left: 40px;
@@ -561,6 +614,10 @@ footer .footer-links a:hover {
   color: var(--pink);
   font-weight: 700;
 }
+
+/* ============================================================
+   ====== SKILLS PAGE (skills.html) ======
+   ============================================================ */
 
 .skills-grid {
   display: grid;
@@ -657,6 +714,10 @@ footer .footer-links a:hover {
   color: var(--white);
 }
 
+/* ============================================================
+   ====== GALLERY PAGE (gallery.html) ======
+   ============================================================ */
+
 .gallery-section-title {
   font-size: 1.4rem;
   color: var(--dark-pink);
@@ -730,6 +791,10 @@ footer .footer-links a:hover {
   margin: 40px 0 10px 0;
 }
 
+/* ============================================================
+   ====== HOBBIES PAGE (hobbies.html) ======
+   ============================================================ */
+
 .hobbies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -790,6 +855,10 @@ footer .footer-links a:hover {
   font-weight: 700;
   color: var(--dark-pink);
 }
+
+/* ============================================================
+   ====== GOALS PAGE (goals.html) ======
+   ============================================================ */
 
 .goal-main-card {
   background: linear-gradient(135deg, var(--soft-pink), var(--light-pink));
@@ -864,6 +933,10 @@ footer .footer-links a:hover {
   font-size: 0.85rem;
   color: var(--medium);
 }
+
+/* ============================================================
+   ====== CONTACT PAGE (contact.html) ======
+   ============================================================ */
 
 .contact-grid {
   display: grid;
@@ -970,6 +1043,10 @@ footer .footer-links a:hover {
   resize: vertical;
 }
 
+/* ============================================================
+   ====== ACHIEVEMENTS PAGE (achievements.html) ======
+   ============================================================ */
+
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1056,6 +1133,10 @@ footer .footer-links a:hover {
   color: var(--medium);
 }
 
+/* ============================================================
+   ====== BLOG PAGE (blog.html) ======
+   ============================================================ */
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1110,6 +1191,9 @@ footer .footer-links a:hover {
   line-height: 1.7;
 }
 
+/* ============================================================
+   RESPONSIVE - TABLET & MOBILE
+   ============================================================ */
 @media (max-width: 900px) {
   .info-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1147,12 +1231,23 @@ footer .footer-links a:hover {
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 8px 0;
+    gap: 5px;
+  }
+
+  .nav-logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 3px;
   }
 
   .nav-links li a {
-    padding: 6px 10px;
-    font-size: 0.78rem;
+    padding: 4px 8px;
+    font-size: 0.68rem;
   }
 
   .page-header h1 {
